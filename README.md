@@ -46,8 +46,8 @@ The system works in the following steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/BTankut/rus_doc_search.git
-cd rus_doc_search
+git clone https://github.com/BTankut/DocuMind-Streamlit.git
+cd DocuMind-Streamlit
 ```
 
 2. Install dependencies:
@@ -55,11 +55,18 @@ cd rus_doc_search
 pip install -r requirements.txt
 ```
 
-3. Set up environment variables:
-Create a `.env` file with:
-```
-OPENROUTER_API_KEY=your_api_key_here
-```
+3. Set up API key:
+   - Sign up at [OpenRouter](https://openrouter.ai/)
+   - Get your API key from the dashboard
+   - Create a `.env` file in the project root
+   - Copy contents from `.env.example` to `.env`
+   - Replace `your_api_key_here` with your actual API key
+
+> ⚠️ **Security Note**: 
+> - Never commit your `.env` file or share your API key
+> - The `.env` file is listed in `.gitignore` to prevent accidental commits
+> - If you accidentally commit sensitive information, change your API key immediately
+> - Each user must use their own API key
 
 ## Usage
 

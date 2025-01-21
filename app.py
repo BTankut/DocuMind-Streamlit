@@ -321,16 +321,12 @@ class DocumentSearchSystem:
             if not api_key:
                 return "API anahtarı bulunamadı. Lütfen .env dosyasını kontrol edin."
 
-            print(f"API Anahtarı: {api_key[:5]}...") # API anahtarının ilk 5 karakterini yazdır
-            
             headers = {
                 "Authorization": f"Bearer {api_key}",
-                "HTTP-Referer": "https://github.com/BTankut/rus_doc_search",
-                "X-Title": "Russian Document Search",
+                "HTTP-Referer": "https://github.com/BTankut/DocuMind-Streamlit",
+                "X-Title": "DocuMind-Streamlit",
                 "Content-Type": "application/json"
             }
-            
-            print(f"Headers: {headers}")
             
             data = {
                 "model": "openai/gpt-4",
@@ -379,16 +375,11 @@ Lütfen yukarıdaki yeteneklerini kullanarak bu soruyu yanıtla."""
                 ]
             }
             
-            print(f"Request Data: {json.dumps(data, indent=2)}")
-
             response = requests.post(
                 url="https://openrouter.ai/api/v1/chat/completions",
                 headers=headers,
                 json=data
             )
-            
-            print(f"Response Status: {response.status_code}")
-            print(f"Response Text: {response.text}")
             
             if response.status_code == 200:
                 return response.json()['choices'][0]['message']['content']

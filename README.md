@@ -1,4 +1,4 @@
-# Russian Document Search System
+# DocuMind-Streamlit
 
 A specialized document search and analysis system designed for handling Russian, Turkish, and English technical documentation. The system uses advanced NLP techniques and AI to provide intelligent search capabilities and document analysis.
 

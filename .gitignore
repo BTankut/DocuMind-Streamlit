@@ -35,6 +35,7 @@ env/
 # Project specific
 chroma_db/
 documents/
+.streamlit/
 *.pdf
 *.txt
 !requirements.txt

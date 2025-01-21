@@ -1,0 +1,10 @@
+streamlit>=1.29.0
+langdetect>=1.0.9
+more-itertools>=10.1.0
+PyPDF2>=3.0.0
+numpy>=1.24.0
+sentence-transformers>=2.2.2
+torch>=2.1.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+chromadb>=0.4.18
